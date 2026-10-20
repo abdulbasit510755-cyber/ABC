@@ -1,0 +1,19 @@
+ABC Kids — صرف موبائل سے آن لائن APK بنانے کی گائیڈ
+
+آپ کو کمپیوٹر کی ضرورت نہیں، مگر GitHub اکاؤنٹ اور انٹرنیٹ چاہیے۔
+
+1. ZIP کو ڈاؤن لوڈ کریں اور موبائل کے File Manager میں Extract کریں۔
+2. Chrome میں https://github.com کھولیں اور اکاؤنٹ بنائیں/لاگ اِن کریں۔
+3. + مینو > New repository پر جائیں، نام ABC-Kids رکھیں، Public یا Private منتخب کریں اور Create repository دبائیں۔
+4. ریپوزٹری میں Add file > Upload files منتخب کریں۔
+5. Extract کیے ہوئے فولڈر کے اندر کی فائلیں اور فولڈرز اپ لوڈ کریں۔ .github فولڈر بھی شامل ہونا ضروری ہے۔ فولڈر اپ لوڈ نہ ہو تو GitHub موبائل سائٹ پر ہر فائل الگ اپ لوڈ کریں؛ خاص طور پر .github/workflows/build-apk.yml۔
+6. Commit changes دبائیں۔ workflow خود چلنا چاہیے۔
+7. ریپوزٹری میں Actions ٹیب کھولیں، "Build ABC Kids APK" run مکمل ہونے تک انتظار کریں۔
+8. مکمل ہونے کے بعد workflow run کھولیں اور Artifacts میں ABC-Kids-APK ڈاؤن لوڈ کریں۔ ZIP کو Extract کریں؛ اندر app-debug.apk ہوگی۔
+9. APK کھول کر Install کریں۔ اگر Android اجازت مانگے تو صرف اسی APK کے لیے "Install unknown apps" کی اجازت دیں، انسٹال کے بعد اجازت واپس بند کر دیں۔
+
+احتیاط:
+- اپنا GitHub پاس ورڈ کسی کو نہ دیں۔
+- APK صرف اسی پروجیکٹ سے بنائیں جس کا کوڈ آپ نے دیکھا ہو۔
+- یہ debug APK ہے؛ عام طور پر ذاتی فون پر ٹیسٹ کے لیے کافی ہوتی ہے۔
+- اگر build fail ہو تو Actions میں error کا اسکرین شاٹ/متن شیئر کریں۔
